@@ -29,6 +29,15 @@
 <% if $access_management { -%>
       <access_management><%= $access_management %></access_management>
 <% } -%>
+<% if $named_collection_control { -%>
+      <named_collection_control><%= $named_collection_control %></named_collection_control>
+<% } -%>
+<% if $show_named_collections { -%>
+      <show_named_collections><%= $show_named_collections %></show_named_collections>
+<% } -%>
+<% if $show_named_collections_secrets { -%>
+      <show_named_collections_secrets><%= $show_named_collections_secrets %></show_named_collections_secrets>
+<% } -%>
 <% if $grants { -%>
       <grants>
 <% $grants.each |$query| { -%>

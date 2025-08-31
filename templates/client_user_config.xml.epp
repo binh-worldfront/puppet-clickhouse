@@ -1,0 +1,20 @@
+<config>
+<% if $hostname { -%>
+  <host><%= $hostname %></host>
+<% } -%>
+<% if $port { -%>
+  <port><%= $port %></port>
+<% } -%>
+<% if $user { -%>
+  <user><%= $user %></user>
+<% } -%>
+<% if $password { -%>
+  <password><%= $password %></password>
+<% } -%>
+<% if $secure { -%>
+  <secure><%= $secure %></secure>
+<% } -%>
+<% if $db_name { -%>
+  <database><%= $db_name %></database>
+<% } -%>
+</config>
